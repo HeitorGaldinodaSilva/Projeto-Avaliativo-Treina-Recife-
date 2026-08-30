@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usuários</title>
+    <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="/css/bootstrap.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body style="background-color: #031F31;">
+
+    <header class="cabeçalho">
+       <div> <img src="/img/Sistema gestão de projetos.png" class="logotipo"> </div>
+        <nav class="navegação">
+            <ul>
+                <a href="/index.html"> <span class="material-icons" id="icone">dashboard</span> Dashboard </a>
+                <a href="/tarefas.html"> <span class="material-icons" id="icone">list_alt</span> Tarefas </a>
+                <a href="/projetos.html"> <span class="material-icons" id="icone">share</span> Projetos </a>
+                <a href="/usuarios.html" class="active"> <span class="material-icons" id="icone">group</span> Usuários </a>
+            </ul>
+        <div class="perfil"> <img src="/img/perfil.jpg" class="imagemPerfil"> 
+        <div class="botãoPerfil"> <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" 
+        aria-expanded="false"> Adrielly </button> </div> </div>
+        </nav>
+    </header>
+
+    <h2 class="texto_formulario2">Adicionar Novo Usuário</h2>
+
+  <div class="formularioUsuarios">
+     <div class="item">
+
+        <button type="button" class="btn btn-success" id="listarUsuario" onclick="teste()">lista de usuários</button> <br>
+
+
+        <label for="nome" class="form-label">nome: </label>
+        <input type="text" class="form-control" id="nome" placeholder="digite o nome"> <br>
+
+        <label for="cpf" class="form-label">cpf: </label>
+        <input type="number" class="form-control" id="cpf" placeholder="000.000.000-00"> <br>
+
+        <label for="E-mail" class="form-label">E-mail: </label>
+        <input type="text" class="form-control" id="E-mail" placeholder="digite seu E-mail"> <br>
+
+        <label for="dataNascimento" class="form-label">Data de nascimento: </label>
+        <input type="date" class="form-control" id="dataNascimento" placeholder="dd/mm/aaaa"> <br>
+
+         <label for="status" class="form-label">Status:</label>
+        <select class="form-select" id="statusUsuario">
+            <option selected>Selecione</option>
+            <option value="1">Ativo</option>
+            <option value="2">Inativo</option>
+            <option value="3">Pendente</option>
+        </select> <br>
+
+         <label for="senhaTemporaria" class="form-label">Senha Temporária: </label>
+        <input type="password" class="form-control" id="senhaUsuario" placeholder="Digite a senha"> <br>
+
+        <div>
+  
+        <button type="button" class="btn btn-success" id="salvarUsuario" onclick="salvarUsuario()">Adicionar Usuario</button> <br>
+
+        <button type="button" class="btn btn-outline-danger" id="cancelarUsuario">Cancelar</button>
+        </div>
+
+     </div>
+
+  </div>
+    
+<script src="/js/script.js"></script>
+</body>
+</html>
+

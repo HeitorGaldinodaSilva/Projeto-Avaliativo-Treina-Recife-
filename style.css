@@ -1,0 +1,543 @@
+/* formatação do header */
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#imagemFundo{
+    background: url(/img/plano_de_fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.loginBox{
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    padding: 30px;
+}
+
+.conteudoLogin{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginLogo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.loginLogo img{
+    width: 140px;
+}
+
+.loginEmail, .loginSenha{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.EmailLogin, .senhaLogin{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.textoLogin{
+    font-size: 12px;
+    color: #777;
+    margin-top: 6px;
+}
+
+.campoSenhaWrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.campoSenhaWrapper .senhaLogin{
+    margin-top: 0;
+    flex: 1;
+}
+
+.btnMostrarSenha{
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.loginCheckbox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.btnEntrar{
+    background-color: #2f6fed;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnEntrar:hover{
+    background-color: #1e5bd6;
+}
+
+
+
+.cabeçalho{
+    background-color: #F5F5F5;
+    height: 100px;
+    display: flex;
+}
+
+/* alinhamneto dos itens do header */
+.navegação{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* formatação da logo do site */
+.logotipo{
+    margin-left: 30px;
+    margin-top: 9px;
+}
+
+/* alinhamento dos intens de navegação */
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: 320px;
+}
+
+/* estilização dos links de navegação */
+.navegação a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size:15px;
+}
+
+/* efeito de selecionado em navegação */
+.navegação a.active {
+    background-color: #0d6efd;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.navegação a.active .material-icons{
+    color: white;
+}
+
+
+/* tamanho do icone de perfil */
+.imagemPerfil{
+    width: 40px;
+    height: 40px;
+}
+
+/* posicionamento dos itens de perfil */
+.perfil{
+    display: flex;
+    margin-left: 310px;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+.texto_formulario1{
+    color: white;
+    display: flex;
+    padding: 40px;
+    margin-left: 340px;
+    font-size: 40px;
+}
+
+.texto_formulario2{
+    color: white;
+    display: flex;
+    padding: 40px;
+    margin-left: 340px;
+    font-size: 40px;
+}
+
+.formulario{
+   background-color: white;
+   justify-content: center;
+   margin-left: 370px;
+   margin-top: -30px;
+   width: 750px;
+   height: 680px;
+   border-radius: 10px;
+   
+}
+
+.formularioUsuarios{
+   background-color: white;
+   justify-content: center;
+   margin-left: 370px;
+   margin-top: -30px;
+   width: 750px;
+   height: 760px;
+   border-radius: 10px;
+   
+}
+
+.formularioProjetos{
+   background-color: white;
+   justify-content: center;
+   margin-left: 370px;
+   margin-top: -30px;
+   width: 750px;
+   height: 570px;
+   border-radius: 10px;
+   
+}
+
+.item{
+    padding: 20px 20px;
+}
+
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.colunaDupla{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+#salvar{
+ width: 650px;
+ margin-bottom: 20px;
+}
+
+#cancelar{
+    width: 650px;
+}
+
+#salvarprojeto{
+    width: 710px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#cancelarprojeto{
+    width: 710px;
+    margin-left: 20px;
+}
+
+#salvarUsuario{
+    width: 710px;
+    margin-bottom: 20px;
+}
+
+#cancelarUsuario{
+    width: 710px;
+}
+
+#listarUsuario{
+    margin-bottom: 20px;
+    margin-left: 570px;
+}
+
+
+.bloco1{
+    background-color: aqua;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.dashboardFundo{
+    height: 55px;
+    width: 100%;
+    background-color: #091d3c;
+    display: flex;
+}
+
+#iconeDashboard{
+  display: flex;
+  color: white;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.dashboardTexto{
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.formListaProjeto{
+    background-color: white;
+    width: 1200px;
+    height: 450px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 180px;
+}
+
+.spamlistaprojeto{
+    margin-left: 20px;
+    
+}
+
+.spamlistaprojeto{
+    display: flex;
+}
+
+.iconelistaprojetos{
+    margin-top: 10px;
+}
+
+.dashboardProjetos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.blocoProjetosConcluidos{
+    background-color: #198754;
+    width: 355px;
+    height: 172px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+
+.blocoEmAndamento{
+    background-color: #0DCAF0;
+    width: 355px;
+    height: 172px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+.blocoPendentes{
+    background-color: #FFC107;
+    width: 355px;
+    height: 172px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+.blocoCancelados{
+    background-color: #DC3545;
+    width: 355px;
+    height: 172px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+#iconeProjetoConcluido{
+    font-size: 45px;
+    margin-left: 150px;
+    margin-top: 30px;
+    color: white;
+}
+
+#iconeEmAndamento{
+    font-size: 45px;
+    margin-left: 150px;
+    margin-top: 30px;
+    color: white;
+}
+
+#iconePendentes{
+    font-size: 45px;
+    margin-left: 150px;
+    margin-top: 30px;
+    color: white;
+}
+
+#iconeCancelados{
+    font-size: 45px;
+    margin-left: 150px;
+    margin-top: 30px;
+    color: white;
+}
+
+
+.value{
+     font-size: 35px;
+    margin-left: 163px;
+    color: white;
+
+}
+
+
+.labelProjetoConcluidos{
+    margin-left: 107px;
+    color: white;
+    font-size: 16px;
+    margin-top: -5px;
+
+}
+
+.labelEmAndamentos{
+    margin-left: 115px;
+    color: white;
+    font-size: 16px;
+    margin-top: -5px;
+
+}
+
+.labelPendentes{
+    margin-left: 135px;
+    color: white;
+    font-size: 16px;
+    margin-top: -5px;
+
+}
+
+.labelCancelados{
+    margin-left: 135px;
+    color: white;
+    font-size: 16px;
+    margin-top: -5px;
+
+}
+
+.cardDistribuição{
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12);
+    width: 735px;
+    height: 374px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.cardHeader{
+    background-color: #031F31;
+    width: 735px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+
+
+#iconeDistribuição{
+    color: white;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.distribuiçãoTexto{
+    color: white;
+    margin-top: 8px;
+}
+
+
+.cardProjetos{
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12);
+    width: 735px;
+    height: 374px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+#iconeProjetos{
+    color: white;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.ProjetosTexto{
+    color: white;
+    margin-top: 8px;
+}
+
+.cardDuplo{
+    display: flex;
+}
+
+.cardResponsavel{
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12);
+    width: 1485px;
+    height: 374px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+#iconeResponsavel{
+    color: white;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.responsavelTexto{
+    color: white;
+    margin-top: 8px;
+}
+
+.cardHeaderResponsavel{
+    background-color: #031F31;
+    width: 1485px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    gap: 5px;
+}

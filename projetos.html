@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projetos</title>
+    <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="/css/bootstrap.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body style="background-color: #031F31;">
+
+    <header class="cabeçalho">
+       <div> <img src="/img/Sistema gestão de projetos.png" class="logotipo"> </div>
+        <nav class="navegação">
+            <ul>
+                <a href="/index.html"> <span class="material-icons" id="icone">dashboard</span> Dashboard </a>
+                <a href="/tarefas.html"> <span class="material-icons" id="icone">list_alt</span> Tarefas </a>
+                <a href="/projetos.html" class="active"> <span class="material-icons" id="icone">share</span> Projetos </a>
+                <a href="/usuarios.html"> <span class="material-icons" id="icone">group</span> Usuários </a>
+            </ul>
+        <div class="perfil"> <img src="/img/perfil.jpg" class="imagemPerfil"> 
+        <div class="botãoPerfil"> <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" 
+        aria-expanded="false"> Adrielly </button> </div> </div>
+        </nav>
+    </header>
+
+    <h2 class="texto_formulario1">Adicionar Novo Projeto</h2>
+
+    <div class="formularioProjetos">
+
+    <div class="item">
+
+ <a href="/listaProjetos.html" <button type="button" class="btn btn-success" id="listarUsuario">lista de projetos</button> </a> <br>
+  <label for="titulo" class="form-label">Nome do projeto: </label>
+  <input type="text" class="form-control" id="titulo" placeholder="digite o nome do projeto"> <br>
+
+  <label for="descrição" class="form-label">Descrição:</label>
+  <input type="descrição" class="form-control" id="descrição" placeholder="Descreva o projeto"> <br>
+
+  <div class="colunaDupla">
+
+    <div class="campo">
+        <label for="data_criação" class="form-label">
+            Data de criação:
+        </label>
+
+        <input type="date" class="form-control" id="data_criação">
+    </div>
+
+    <div class="campo">
+        <label for="data_conclusão" class="form-label">
+            Data de conclusão:
+        </label>
+
+        <input type="date" class="form-control" id="data_conclusão">
+    </div>
+
+</div>
+<br>
+
+
+ 
+  <div class="colunaDupla">
+
+    <div class="campo">
+        <label for="status" class="form-label">
+            Status:
+        </label>
+
+        <select class="form-select" id="status">
+            <option selected>Selecione</option>
+            <option value="1">Pendente</option>
+            <option value="2">Em andamento</option>
+            <option value="3">Concluído</option>
+            <option value="4">Cancelado</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <label for="responsavel" class="form-label">Responsável:</label>
+
+        <input type="text" class="form-control" id="responsavel">
+    </div>
+    </div>
+
+</div>
+
+ 
+
+  <div class="botaoProjetos">
+  
+  <button type="button" class="btn btn-success" id="salvarprojeto" onclick="salvarProjeto()">Salvar</button> <br>
+
+  <button type="button" class="btn btn-outline-danger" id="cancelarprojeto">Cancelar</button>
+  </div>
+  
+
+</div>
+
+
+
+</div>
+
+<script src="/js/script.js"></script>
+    
+</body>
+</html>
+

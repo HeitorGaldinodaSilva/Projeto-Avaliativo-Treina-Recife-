@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarefas</title>
+    <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="/css/bootstrap.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body style="background-color: #031F31;">
+
+    <header class="cabeçalho">
+       <div> <img src="/img/Sistema gestão de projetos.png" class="logotipo"> </div>
+        <nav class="navegação">
+            <ul>
+                <a href="/index.html"> <span class="material-icons" id="icone">dashboard</span> Dashboard </a>
+                <a href="/tarefas.html" class="active"> <span class="material-icons" id="icone">list_alt</span> Tarefas </a>
+                <a href="/projetos.html"> <span class="material-icons" id="icone">share</span> Projetos </a>
+                <a href="/usuarios.html"> <span class="material-icons" id="icone">group</span> Usuários </a>
+            </ul>
+        <div class="perfil"> <img src="/img/perfil.jpg" class="imagemPerfil"> 
+        <div class="botãoPerfil"> <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" 
+        aria-expanded="false"> Adrielly </button> </div> </div>
+        </nav>
+    </header>
+
+    <h2 class="texto_formulario1">Adicionar Nova Tarefa</h2>
+
+
+  <div class="formulario">
+
+  <div class="item">
+
+  <button type="button" class="btn btn-success" id="listarUsuario" onclick="teste()">lista de tarefas</button> <br>
+  <label for="titulo" class="form-label">titulo: </label>
+  <input type="text" class="form-control" id="titulo" placeholder="digite o titulo da tarefa"> <br>
+
+ <div class="colunaDupla">
+
+    <div class="campo">
+        <label for="prioridade" class="form-label">Prioridade:</label>
+
+        <select class="form-select" id="prioridade">
+            <option selected>PRIORIDADE</option>
+            <option value="1">ALTA</option>
+            <option value="2">MÉDIA</option>
+            <option value="3">BAIXA</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <label for="responsavel" class="form-label">Responsável:</label>
+        <input type="text" class="form-control" id="responsavel">
+    </div>
+
+</div> <br>
+
+
+  <label for="descrição" class="form-label">Descrição:</label>
+  <input type="descrição" class="form-control" id="descrição" placeholder="escreva a tarefa"> <br>
+
+
+ <div class="colunaDupla">
+
+    <div class="campo">
+        <label for="data_criação" class="form-label"> Data de criação:</label>
+        <input type="date" class="form-control" id="data_criação">
+    </div>
+
+    <div class="campo">
+        <label for="data_conclusão" class="form-label">Data de conclusão:</label>
+        <input type="date" class="form-control" id="data_conclusão">
+    </div>
+
+</div>
+
+  <div class="colunaDupla">
+
+    <div class="campo">
+        <label for="status" class="form-label">Status:</label>
+        <select class="form-select" id="status">
+            <option selected>Selecione</option>
+            <option value="1">Pendente</option>
+            <option value="2">Em andamento</option>
+            <option value="3">Concluído</option>
+            <option value="4">Entregue</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <label for="projeto" class="form-label">Projeto:</label>
+            <select class="form-select" id="projeto">
+            <option selected>Selecione</option>
+            <option value="1">Web site</option>
+            <option value="2">Aplicativo</option>
+            <option value="3">Sistema Interno</option>
+            <option value="4">Outro</option>
+        </select>
+    </div>
+
+</div>
+
+  <br>  
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault"> Definir Lembrete </label>  <br>
+
+  <div>
+  
+  <button type="button" class="btn btn-success" id="salvar" onclick="teste()">Salvar</button> <br>
+
+  <button type="button" class="btn btn-outline-danger" id="cancelar">Cancelar</button>
+  </div>
+  
+
+</div>
+
+<br>
+
+</div>
+
+<script src="/js/script.js"></script>
+    
+</body>
+</html>
+

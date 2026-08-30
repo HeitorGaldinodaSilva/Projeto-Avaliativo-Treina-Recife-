@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="/css/bootstrap.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+
+    
+    <header class="cabeçalho">
+       <div> <img src="/img/Sistema gestão de projetos.png" class="logotipo"> </div>
+        <nav class="navegação">
+            <ul>
+                <a href="/index.html" class="active"> <span class="material-icons" id="icone">dashboard</span> Dashboard </a>
+                <a href="/tarefas.html"> <span class="material-icons" id="icone">list_alt</span> Tarefas </a>
+                <a href="/projetos.html"> <span class="material-icons" id="icone">share</span> Projetos </a>
+                <a href="/usuarios.html"> <span class="material-icons" id="icone">group</span> Usuários </a>
+            </ul>
+        <div class="perfil"> <img src="/img/perfil.jpg" class="imagemPerfil" style="border-radius: 50px;"> 
+        <div class="botãoPerfil"> <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" 
+        aria-expanded="false"> Adrielly </button> </div> </div>
+        </nav>
+    </header>
+    
+    <div class="dashboardFundo">
+       <div> <span class="material-icons" id="iconeDashboard">dashboard</span></div>
+       <p class="dashboardTexto">Dashboard de projetos</p>
+    </div>
+    
+    <div class="dashboardProjetos">
+        <div class="blocoProjetosConcluidos">
+            <div class="conteudoProjetosConcluidos">
+                <span class="material-icons" id="iconeProjetoConcluido">check_circle</span>
+                <div class="value" id="TotalConcluidos">0</div>
+                <div class="labelProjetoConcluidos">Projeto Concluidos</div>
+            </div>
+        </div>
+
+        <div class="blocoEmAndamento">
+            <div class="conteudoEmAndamento">
+                <span class="material-icons" id="iconeEmAndamento">cached</span>
+                <div class="value" id="TotalEmAndamento">0</div>
+                <div class="labelEmAndamentos">Em Andamento</div>
+            </div>
+        </div>
+
+
+        <div class="blocoPendentes">
+            <div class="conteudoPendentes">
+                <span class="material-icons" id="iconePendentes">warning</span>
+                <div class="value" id="TotalPendentes">0</div>
+                <div class="labelPendentes">Pendentes</div>
+            </div>
+        </div>
+
+
+        <div class="blocoCancelados">
+            <div class="conteudoCancelados">
+                <span class="material-icons" id="iconeCancelados">cancel</span>
+                <div class="value" id="TotalCancelados">0</div>
+                <div class="labelCancelados">Cancelados</div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="cardDuplo">
+
+    <div class="cardDistribuição">
+        <div class="cardHeader">
+            <span class="material-icons" id="iconeDistribuição">pie_chart</span>
+            <p class="distribuiçãoTexto">Distribuição por Status</p>
+        </div>
+        <div style="padding: 20px; height: 300px;">
+            <canvas id="graficoStatus"></canvas>
+        </div>
+    </div>
+
+    <div class="cardProjetos">
+        <div class="cardHeader">
+            <span class="material-icons" id="iconeProjetos">calendar_today</span>
+            <p class="ProjetosTexto">Projetos por mês</p>
+        </div>
+        <div style="padding: 20px; height: 300px;">
+            <canvas id="graficoMes"></canvas>
+        </div>
+    </div>
+
+</div>
+
+<div class="cardResponsavel">
+    <div class="cardHeaderResponsavel">
+        <span class="material-icons" id="iconeResponsavel">group</span>
+        <p class="responsavelTexto">Projetos por Responsável</p>
+    </div>
+    <div style="padding: 20px; height: 300px;">
+        <canvas id="graficoResponsavel"></canvas>
+    </div>
+</div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
+
